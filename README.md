@@ -1,7 +1,7 @@
 ## How to run simulator
 
 * After you completed the steps in setup section, source the workspace and run:
-`$ ros2 launch tier4_simulator_launch simulator.launch.xml vehicle_model:=sample_vehicle map_path:=src/task_map
+`$ ros2 launch tier4_simulator_launch simulator.launch.xml vehicle_model:=sample_vehicle sensor_model:=sample_sensor_kit map_path:=src/task_map
 `
 
 **FYI**: You need to modify the path of the task_map file.
