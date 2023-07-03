@@ -20,6 +20,7 @@
 // NOLINTBEGIN(readability-identifier-naming)
 
 #include "lanelet2_extension/regulatory_elements/autoware_traffic_light.hpp"
+#include "lanelet2_extension/regulatory_elements/no_parking_area.hpp"
 #include "lanelet2_extension/regulatory_elements/no_stopping_area.hpp"
 #include "lanelet2_extension/utility/query.hpp"
 
@@ -222,6 +223,16 @@ visualization_msgs::msg::MarkerArray detectionAreasAsMarkerArray(
   const std_msgs::msg::ColorRGBA & c, const rclcpp::Duration & duration = rclcpp::Duration(0, 0));
 
 /**
+ * [noParkingAreasAsMarkerArray creates marker array to visualize detection areas]
+ * @param  no_reg_elems [no parking area regulatory elements]
+ * @param  c            [color of the marker]
+ * @param  duration     [lifetime of the marker]
+ */
+visualization_msgs::msg::MarkerArray noParkingAreasAsMarkerArray(
+  const std::vector<lanelet::NoParkingAreaConstPtr> & no_reg_elems,
+  const std_msgs::msg::ColorRGBA & c, const rclcpp::Duration & duration = rclcpp::Duration(0, 0));
+
+/**
  * [noStoppingAreasAsMarkerArray creates marker array to visualize detection areas]
  * @param  no_reg_elems [mp stopping area regulatory elements]
  * @param  c            [color of the marker]
@@ -239,6 +250,16 @@ visualization_msgs::msg::MarkerArray noStoppingAreasAsMarkerArray(
  */
 visualization_msgs::msg::MarkerArray speedBumpsAsMarkerArray(
   const std::vector<lanelet::SpeedBumpConstPtr> & sb_reg_elems, const std_msgs::msg::ColorRGBA & c,
+  const rclcpp::Duration & duration = rclcpp::Duration(0, 0));
+
+/**
+ * [crosswalkAreasAsMarkerArray creates marker array to visualize crosswalk regulatory element]
+ * @param  sb_reg_elems [crosswalk regulatory elements]
+ * @param  c            [color of the marker]
+ * @param  duration     [lifetime of the marker]
+ */
+visualization_msgs::msg::MarkerArray crosswalkAreasAsMarkerArray(
+  const std::vector<lanelet::CrosswalkConstPtr> & cw_reg_elems, const std_msgs::msg::ColorRGBA & c,
   const rclcpp::Duration & duration = rclcpp::Duration(0, 0));
 
 /**
