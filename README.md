@@ -64,3 +64,7 @@ pose:
 ```
 
 * After that you should see the car and the map on Rviz
+
+## Additional Notes
+* you can run the controller node with  "ros2 run controller_task_node controller_exe"
+* you should change the topic name of the "ScenarioTrajectory" from /trajectory to /control/trajectory in order to see the 50 points ahead of the vehicle.
