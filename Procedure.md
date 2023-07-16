@@ -19,9 +19,6 @@ General Method:
 	* PD is used in lateral controller
 
 Stage1-Taking trajectory points from file and visualizing 50 of them in Rviz.:
-
-* #include <fstream> was added.
-	=>this is to include waypoints.txt file into controller.cpp. This makes a txt file is read or written by the controller.cpp.
-
-* waypoint.txt file was read fully at first.
+	* waypoint.txt file was read fully at first.
+ 	* 
 
