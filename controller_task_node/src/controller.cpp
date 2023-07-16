@@ -82,7 +82,7 @@ namespace controller
         this, get_clock(), 30ms, std::bind(&Controller::onTimer, this));
   }
 
-    void Controller::findClosestTrajectoryPoint() // this function is to prevent having dublicate codes in both OnTime() & calcSteerCmd()
+    void Controller::findClosestTrajectoryPoint() //This function finds the closest trajectory point to the vehicle
   {
       int num_points = trajectoryPoints_.size();
       min_distance_ = std::numeric_limits<double>::max();
