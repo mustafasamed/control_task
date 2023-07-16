@@ -16,9 +16,7 @@
 #include <tf2/LinearMath/Transform.h>
 #include <tf2/LinearMath/Vector3.h>
 
-
  #include "controller_task_node/calculateDistance.hpp"
- #include "controller_task_node/calculateSteeringAngle.hpp"
 
 #include "controller_task_node/controller.hpp"
 
