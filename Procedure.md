@@ -60,8 +60,8 @@
 
  	* This part was done considering the trajectory structure. The trajectory was divided into 5 segments and 3 types:
   		1- Beginning(small curve)
-    		2- Transition between beginning and U-turn(medium curve)
-      		3- U-turn(high curve)
+    	2- Transition between beginning and U-turn(medium curve)
+      	3- U-turn(high curve)
 		4- Transition between U-turn and ending(medium curve)
   		5- Ending(small curve)
     	
