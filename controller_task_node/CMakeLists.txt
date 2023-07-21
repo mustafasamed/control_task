@@ -4,6 +4,8 @@ project(controller_task_node)
 find_package(autoware_cmake REQUIRED)
 autoware_package()
 
+find_package(tf2 REQUIRED)
+
 set(CONTROLLER_TASK_NODE controller)
 ament_auto_add_library(${CONTROLLER_TASK_NODE} SHARED
   include/controller_task_node/controller.hpp
